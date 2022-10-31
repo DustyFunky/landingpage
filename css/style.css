@@ -51,9 +51,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-body {
-   width: 1440px;
-}
+body
 .mainText { 
   text-align: center;
   font-family: 'Arapey', serif;
@@ -65,13 +63,16 @@ body {
 }
 .afterMainText {
   width: 1024px;
-  height: 48px;
   text-align: center;
   font-family: 'Verdana';
   font-style: normal;
   font-size: 20px;
   color: #000000;
-  margin: 50px 0 50px 0;
+  margin: 50px auto;
+}
+.h3 {
+  width: 1024px;
+  margin: 0 auto;
 }
 .button {
   width: 267px;
@@ -94,18 +95,19 @@ body {
   color: #FFFFFF;
 }
 .groupFive {
-  width: 1440px;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 129px 50px 130px;
+  padding: 50px 0 50px 130px;
 }
 .eclipseOne {
   border-radius: 50%;
   width: 60px;
   height: 60px;
   background: #9DB0D1;
+  margin-right: 10px;
+  padding: 17px 15px 18px 15px;
 }
 .groupOne {
   box-sizing: content-box;
@@ -120,9 +122,7 @@ body {
   color: #000000;
 }
 .caption {
-  width: 1440px;
   height:400px;
-  top: 552;
   background: url("../img/group6.png") repeat-x top / auto 200px,
    linear-gradient(180deg, rgba(135, 198, 235, 0) 8.33%, #87C6EB 93.06%);
   padding: 252px 120px 104px;
@@ -133,9 +133,11 @@ body {
   line-height: 44px;
   text-align: center;
   }
-.groupMineCaption {
-    displey: flex;
+.groupMineCaptions {
+    display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
     background: #87C6EB;
     padding: -23px 120px;
     
@@ -145,16 +147,16 @@ body {
   height: 560px;
   background: #FFFFFF;
   border-radius: 10px;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  vertical-align: top;  
+  /*justify-content: center;*/
+  /*align-items: center;  */
   padding: 20px 20px 20px 20px;
   margin: -23px 0 0 0;
   font-family: 'Verdana';
-  font-weight: 400;
   font-size: 20px;
   color: #000000;
+}
+.social a {
+  text-decoration: none;
 }
 .image {
 width: 310px;
@@ -210,9 +212,7 @@ img {
   color: #FFFFFF;
 }
 .whiteText {
-  position: absolute;
   width: 480px;
-  height: 132px;
   padding: 75px 0px;
   font-family: 'Arapey';
   font-style: normal;
@@ -222,10 +222,7 @@ img {
   color: #FFFFFF;
 }
 .blackText {
-  position: absolute;
   width: 580px;
-  height: 73px;
-  padding: 257px 0px;
   font-family: 'Verdana';
   font-style: normal;
   font-weight: 400;
@@ -251,9 +248,27 @@ img {
   margin: 386px 0 0 0px;
   }
   .mainCaption {
-    width: 1440px;
     height: 1047px;
     padding: 0 120px;
     background: url("../img/rectangle2.png") no-repeat right bottom / 600px 475px, #87C6EB;
     border: 0;
   }
+  .downRow {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.faq {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  color: #FFFFFF;
+  background: #EBAC87;
+  text-align: center;
+  line-height: 80px;
+  font-size: 60px;
+  }
+
+
